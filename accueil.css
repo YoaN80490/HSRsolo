@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rajdhani&display=swap');
+
+*{
+    font-family: "Montserrat";
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+body{
+    background-image: url(background_etoile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header_acccueil {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .menu_header { grid-area: 2 / 1 / 3 / 2; }
+    .logo_header { grid-area: 1 / 1 / 2 / 6; }
+
+    .logo_header img{
+    width: 600px;
+    }
+
+    .logo_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+  
+.menu_header div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 200px;
+    justify-content: space-between;
+    color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: solid white 1px;
+    border-radius: 25px;
+
+}
+
+.accueil{
+    background-color: white !important;
+    color: black !important;
+
+}
+.personnages{
+        background-color: white !important;
+        color: black !important;
+    
+}
+
+.tierlist{
+    background-color: white !important;
+    color: black !important;
+
+    }
+
+.home:hover{
+    color: #C9A36A;
+}
+.perso:hover{
+    color: #C9A36A;
+}
+.tl:hover{
+    color: #C9A36A;
+}
+    
+a{
+    text-decoration: none;
+}
+.intro p{
+    color: white;
+}
+hr{
+  border-style: none;
+}
+
+
+
+
+
+
+
+
+.intro img{
+   width: 300px;
+}
+.intro{
+    margin-top: 25px;
+}
+
+li{
+    color: white;
+}
