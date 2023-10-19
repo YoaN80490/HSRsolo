@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rajdhani&display=swap');
+
+*{
+    font-family: "Montserrat";
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+body{
+    background-image: url(background_etoile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.header_accueil {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .menu_header { grid-area: 2 / 1 / 3 / 2; }
+    .logo_header { grid-area: 1 / 2 / 2 / 5; }
+    .skin_perso { grid-area: 2 / 2 / 4 / 4; }
+    .nom_perso { grid-area: 1 / 4 / 2 / 6; }
+    .description_perso { grid-area: 2 / 4 / 4 / 6; } 
+    
+
+    .menu_header div{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 200px;
+        justify-content: space-between;
+        color: white;
+        padding-left: 8px;
+        padding-right: 8px;
+        border: solid white 1px;
+        border-radius: 25px;
+    
+    }
+    
+    .accueil{
+        background-color: white !important;
+        color: black !important;
+    
+    }
+    .personnages{
+            background-color: white !important;
+            color: black !important;
+        
+    }
+    
+    .tierlist{
+        background-color: white !important;
+        color: black !important;
+    
+        }
+    
+    .home:hover{
+        color: #C9A36A;
+    }
+    .perso:hover{
+        color: #C9A36A;
+    }
+    .tl:hover{
+        color: #C9A36A;
+    }
+        
+    a{
+        text-decoration: none;
+    }
+
+.logo_header{
+    width: 930px;
+    height: 100px;
+    position: relative;
+    overflow: auto;
+}
+
+
+    .carrousel{
+     width: 3440px;
+
+    }
+
+    .carrousel img{
+        float: left;
+        width: 70px;
+        margin-left: 30px ;
+        border-radius: 100%;
+    }
+
+
+
+
+
+
+        
+
+    .info_perso{
+        background-color: white;
+    }
+
+    .info_perso p{
+        font-size: 7px;
+    }
+
+    .skin_perso{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .description_perso{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nom_perso{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nom_perso img{
+        width: 30px;
+        height: 30px;
+        margin-top: 30px;
+    }
+
+    .nom_perso p{
+        font-size: 30px !important;
+        color: white;
+    }
+
+    .skin_perso img{
+        width: 600px;
+        z-index: -1;
+    }
+
+    .classe{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .name{
+        display: flex;
+        justify-content: start;
+    }
+
+
+    .menu_perso{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }

@@ -3,13 +3,15 @@
 *{
     font-family: "Montserrat";
     box-sizing: border-box;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 body{
     background-image: url(background_etoile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    
 }
 
 .header_acccueil {
@@ -101,4 +103,9 @@ hr{
 
 li{
     color: white;
+}
+
+.gras{
+    font-weight: bolder;
+    font-size: larger;
 }
