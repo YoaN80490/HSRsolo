@@ -6,6 +6,12 @@
     font-size: 15px;
 }
 
+a{
+    text-decoration: none;
+
+}
+:root{  --bs-gradient: linear-gradient(180deg,hsla(0,0%,100%,.15),hsla(0,0%,100%,0));}
+
 body{
     background-image: url(background_etoile.jpg);
     background-repeat: no-repeat;
@@ -17,7 +23,7 @@ body{
 .header_accueil {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 295.5px);
+    grid-template-rows: repeat(4, 295.5px);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
@@ -27,7 +33,38 @@ body{
     .skin_perso { grid-area: 2 / 2 / 4 / 4; }
     .nom_perso { grid-area: 2 / 4 / 3 / 6; }
     .description_perso { grid-area: 3 / 4 / 4 / 6; } 
+    .logo_bottom { grid-area: 1 / 5 / 2 / 6; }
     
+@media screen and (max-width: 1200px) {
+    .header_accueil{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .skin_perso img{
+        width: 380px !important;
+    }
+
+    .logo_header{
+        width: 300px !important;
+        height: 70px !important;
+
+    }
+    
+    
+        .carrousel{
+         width: 2050px !important;
+    
+        }
+    
+        .carrousel img{
+            width: 50px !important;
+            margin-left: 10px !important;
+        }
+    
+}
+
 
     .menu_header div{
         display: flex;
@@ -40,8 +77,10 @@ body{
         padding-right: 8px;
         border: solid white 1px;
         border-radius: 25px;
+        
     
     }
+ 
     
     .accueil{
         background-color: white !important;
@@ -69,11 +108,60 @@ body{
     .tl:hover{
         color: #C9A36A;
     }
-        
-    a{
-        text-decoration: none;
 
-    }
+footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+.gauche { grid-area: 1 / 1 / 2 / 2; }
+.milieu { grid-area: 1 / 2 / 2 / 3; }
+.droite { grid-area: 1 / 3 / 2 / 4; }
+
+.footer div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+footer p{
+            color: white;
+}
+footer a{
+            color: white;
+        }
+
+ .milieu{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .milieu i{
+    margin-right: 10px;
+ }
+
+ .milieu a{
+    color: white;
+ }
+
+ .milieu a:hover{
+    color: #C9A36A !important;
+ }
+ 
+ .droite{
+    text-align: right;
+ }
+
+ .gauche a:hover{
+    color: #C9A36A;
+ }
+
+ 
+/* CARROUSEL*/
 
 .logo_header{
     width: 930px;
@@ -94,20 +182,30 @@ body{
         border-radius: 100%;
     }
 
+    .violet{
+        background: linear-gradient(180deg, #351e5a, #8A5FCC );
+    }
+
+    .orange{
+        background: linear-gradient(180deg, #835004, #C9A36A );
+    }
 
 
 
 
 
+    .logo_bottom img{
+        width: 400px;
+    }
         
 
     .info_perso{
-        background-color: white;
         overflow: auto;
     }
 
     .info_perso p{
-        font-size: 10px;
+        font-size: 15px;
+        color: white;
     }
 
     .skin_perso{
@@ -118,6 +216,7 @@ body{
     .description_perso{
         display: flex;
         flex-direction: column;
+        height: 500px;
     }
     .nom_perso{
         display: flex;
@@ -187,5 +286,71 @@ body{
      
       
 }
-        
+
+
+.active{
+    background-color: white !important;
+}
+
+.active p{
+    color: black;
+}
+.inactif:hover p{
+    color: #C9A36A;
+}
      
+.gras{
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.italique{
+    font-style: oblique;
+}
+
+
+
+
+.tab {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .bodyy { grid-area: 1 / 2 / 2 / 3; }
+    .feet { grid-area: 2 / 2 / 3 / 3; }
+    .planete_sphere { grid-area: 3 / 2 / 4 / 3; }
+    .link_rope { grid-area: 4 / 2 / 5 / 3; }
+    .nom_body { grid-area: 1 / 1 / 2 / 2; }
+    .nom_feet { grid-area: 2 / 1 / 3 / 2; }
+    .nom_sphere { grid-area: 3 / 1 / 4 / 2; }
+    .nom_rope { grid-area: 4 / 1 / 5 / 2; }
+
+
+    .tab div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: solid white 1px;
+    }
+
+
+    .tab img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .tab{
+        margin-top: 30px;
+    }
+
+    .substats{
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+  
+
+
