@@ -13,7 +13,60 @@ body{
     background-attachment: fixed;
     
 }
+@media screen and (max-width:1200px){
+    .header_accueil{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .icon_menu{
+        transform: scale(1) !important;
+        position: static !important;
+    }
+
+    .menu_header div{
+        display: none !important;
+    }
+    .menu{
+        position: absolute;
+    }
+
+    .menu:hover div{
+        display: flex !important;
+    }
+    .menu:hover{
+        height: 230px;
+    }
+
+
+    .logo_header img{
+        transform: scale(0);
+        position: absolute;
+    }
+
+    .intro{
+        margin-top: 250px;
+    }
+
+
+}
+.menu_header img{
+    width: 160px;
+}
+
+.icon_menu{
+    transform: scale(0);
+    width: 200px;
+    z-index: 2;
+    position: absolute;
+}
+
+.menu{
+    width: 200px;
+    height: 140px;
+
+}
 .header_acccueil {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -93,13 +146,10 @@ hr{
 
 
 
-
 .intro img{
    width: 300px;
 }
-.intro{
-    margin-top: 25px;
-}
+
 
 li{
     color: white;

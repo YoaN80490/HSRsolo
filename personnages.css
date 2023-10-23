@@ -10,7 +10,6 @@ a{
     text-decoration: none;
 
 }
-:root{  --bs-gradient: linear-gradient(180deg,hsla(0,0%,100%,.15),hsla(0,0%,100%,0));}
 
 body{
     background-image: url(background_etoile.jpg);
@@ -40,29 +39,45 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
     }
     .skin_perso img{
         width: 380px !important;
+        margin-top: 100px;
     }
 
     .logo_header{
         width: 300px !important;
         height: 70px !important;
-
     }
+
     
-    
-        .carrousel{
-         width: 2050px !important;
+    .carrousel{
+        width: 2050px !important;
     
         }
     
-        .carrousel img{
+    .carrousel img{
             width: 50px !important;
             margin-left: 10px !important;
         }
-    
+    .icon_menu{
+        transform: scale(1) !important;
+    }
+
+    .menu_header div{
+        display: none !important;
+    }
+
+    .menu:hover div{
+        display: flex !important;
+    }
+    .menu:hover{
+        height: 230px;
+    }
+
+    .menu{
+        margin-top: 80px !important;
+    }
 }
 
 
@@ -79,6 +94,23 @@ body{
         border-radius: 25px;
         
     
+    }
+
+    .menu_header img{
+        width: 180px;
+    }
+
+    .icon_menu{
+        transform: scale(0);
+        width: 200px;
+        z-index: 2;
+    }
+
+    .menu{
+        width: 200px;
+        height: 83px;
+        position: absolute;
+        margin-top: 195.5px;
     }
  
     
@@ -127,6 +159,8 @@ footer {
             align-items: center;
         }
 
+
+
 footer p{
             color: white;
 }
@@ -156,6 +190,12 @@ footer a{
     text-align: right;
  }
 
+
+
+.gauche{
+    display: flex;
+    align-items: center;
+}
  .gauche a:hover{
     color: #C9A36A;
  }
@@ -190,7 +230,9 @@ footer a{
         background: linear-gradient(180deg, #835004, #C9A36A );
     }
 
-
+.logo_bottom{
+    z-index: -2;
+}
 
 
 
