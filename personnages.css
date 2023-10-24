@@ -70,6 +70,7 @@ body{
 
     .menu:hover div{
         display: flex !important;
+        backdrop-filter: blur(7px);
     }
     .menu:hover{
         height: 230px;
