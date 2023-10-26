@@ -214,3 +214,8 @@ text-align: right;
 .gauche a:hover{
 color: #C9A36A;
 }
+
+.gauche{
+    display: flex;
+    align-items: center;
+}
