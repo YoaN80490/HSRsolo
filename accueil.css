@@ -15,17 +15,18 @@ body{
 }
 @media screen and (max-width:1200px){
     .header_accueil{
-        display: flex;
-        flex-direction: column;
+        display: flex !important;
         align-items: center;
+        flex-direction: column;
     }
+    
 
     .icon_menu{
         transform: scale(1) !important;
         position: static !important;
     }
 
-    .menu_header div{
+    .menu div{
         display: none !important;
     }
     .menu{
@@ -41,15 +42,28 @@ body{
         
     }
 
-
     .logo_header img{
         transform: scale(0);
         position: absolute;
     }
 
-    .intro{
-        margin-top: 250px;
-    }
+.image_intro{
+    width: 400px !important;
+}
+iframe{
+    display: none;
+}
+.videotips a{
+    display: flex !important;
+    text-decoration: underline  white;
+}
+.intro{
+    margin-top: 150px;
+}
+
+.conteneur_login{
+    margin-top: 200px;
+}
 
 
 
@@ -67,13 +81,13 @@ body{
 
 .menu{
     width: 200px;
-    height: 140px;
+    height: 83px;
 
 }
-.header_acccueil {
+.header_accueil {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 295.5px);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
@@ -143,10 +157,19 @@ hr{
   border-style: none;
 }
 
+.formulaire a{
+   color: white;
+}
+.formulaire a:hover{
+    color: #C9A36A !important;
+}
 
-
-
-
+.formulaire{
+    display: flex;
+    position: absolute;
+    justify-content: end;
+    z-index: 2;
+}
 
 
 .intro img{
@@ -160,7 +183,9 @@ li{
 
 .gras{
     font-weight: bolder;
-    font-size: larger;
+    font-size: 20px;
+    letter-spacing: 2px;
+
 }
 
 
@@ -219,3 +244,91 @@ color: #C9A36A;
     display: flex;
     align-items: center;
 }
+
+.bouton{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 25px;
+    border: white solid 1px;
+    width: 400px;
+    padding-right: 5px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+      
+}
+
+.bouton img{
+    width: 100px;
+    border-radius: 25px;
+}
+
+.bouton_conteneur{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.intro{
+    line-height: 30px;
+}
+
+.videotips{
+    display: flex;
+    flex-wrap: wrap;
+}
+.videotips a{
+    display: none;
+}
+
+@media screen and (min-width:1200px){
+    .videotips{
+        justify-content: space-around;
+    }
+}
+
+
+
+.conteneur_login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 200px;
+}
+
+
+label{
+    color: white !important;
+    font-size: 25px;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-around;
+    border: white;
+}
+
+input[type="password"]{
+    width: 400px;
+
+}
+
+input[type="text"]{
+    width: 400px;
+
+}
+
+button{
+    border-radius: 25px;
+    background-color: transparent;
+    border: white solid 1px;
+    color: white;
+    height: 30px;
+    font-size: 15px;
+}
+
+button:hover{
+    color: #C9A36A;
+}
+ 
