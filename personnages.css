@@ -223,6 +223,17 @@ footer a{
         border-radius: 100%;
     }
 
+    .carrousel img:hover {
+        animation: zoom 1s both;
+    }
+
+
+    @keyframes zoom {
+        0%{ transform: scale(1);}
+        100%{transform: scale(1.1);}
+        
+      }
+
     .violet{
         background: linear-gradient(180deg, #351e5a, #8A5FCC );
     }

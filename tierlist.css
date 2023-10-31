@@ -195,6 +195,14 @@ a{
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.option img{
+    background-image: url(background_etoile.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    border-radius: 25px;
+}
 .single_menu{
     display: flex;
     flex-direction: column;
@@ -228,7 +236,7 @@ a{
 }
 
 .active{
-    background-color: rgba(255, 255, 255, 0.687);
+    background-color: rgb(255, 255, 255);
     color: black;
     border-radius: 25px;
 }
@@ -353,6 +361,20 @@ a{
     align-items: center;
     justify-content: center;
     z-index: 0;
+  }
+
+  .card{
+    overflow: hidden;
+  }
+
+  .card img:hover{
+    animation: zoom 1s both;
+  }
+
+  @keyframes zoom {
+    0%{ transform: scale(1);}
+    100%{transform: scale(1.1);}
+    
   }
   .emplacement_hover {
     display: flex;
